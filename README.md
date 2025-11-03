@@ -1,5 +1,8 @@
 # Cover Letter Maker
 
+<!-- Add a short GIF demo below -->
+![Demo GIF of Cover Letter Maker](./assets/demo.gif)
+
 A CLI tool that uses Google Generative AI + LangChain to generate personalized cover letters from your CV and a job listing. Generates a LaTeX-formatted letter and can compile to PDF (if pdflatex is available).
 
 Features
@@ -7,6 +10,8 @@ Features
 - Paste or upload CV (PDF extraction via docling)
 - Save reusable CV and custom instructions
 - Preview and export as PDF (requires a local LaTeX installation)
+
+[![asciicast](https://asciinema.org/a/753294.svg)](https://asciinema.org/a/753294)
 
 Prerequisites
 - Python 3.12+
