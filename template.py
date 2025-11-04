@@ -188,6 +188,7 @@ class CoverLetterGenerator:
             '}': r'\}',
             '~': r'\textasciitilde{}',
             '^': r'\textasciicircum{}',
+            '%': r'\%'
         }
 
         for char, replacement in replacements.items():
@@ -206,10 +207,13 @@ class CoverLetterGenerator:
         """
         data = cover_letter.to_dict()
 
-        safe_keys = set(cover_letter.content.model_dump().keys())
-        safe_keys.add('github')
-        safe_keys.add('linkedin')
-        safe_keys.add('email')
+        # safe_keys = set(cover_letter.content.model_dump().keys())
+        # print(safe_keys)
+        # safe_keys.add('github')
+        # safe_keys.add('linkedin')
+        # safe_keys.add('email')
+        
+        safe_keys = {'github', 'linkedin', 'email'}
 
         processed_data = {}
         for key, value in data.items():
