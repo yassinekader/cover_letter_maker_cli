@@ -83,3 +83,5 @@ Extending & development
 
 Contributing
 Contributions are open to anyone — we welcome bug reports, feature requests, documentation improvements, and pull requests.
+
+special thanks to [@aboodAJ](https://github.com/aboodAJ/cover-letter-maker) for the initial inspiration
