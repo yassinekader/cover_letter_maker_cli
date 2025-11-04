@@ -29,7 +29,7 @@ PROMPT = ChatPromptTemplate.from_template(
                         - Include proper salutation and closing
                         - CRITICAL: Use only standard ASCII characters. Use straight quotes ('), not curly quotes (' ' " "). Use regular hyphens (-), not em-dashes (—) or en-dashes (–).
                         - CRITICAL: LinkedIn and GitHub usernames should not include the full URL, only the username.
-                        
+                        - Critical: output text should be in JSON format as shown in the example below, and text should be raw strings without any special formatting or Markdown.
                         You MUST respond with a valid JSON object in this exact format, Here is an example:
                         {{ 
                         "contact": {{
