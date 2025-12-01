@@ -7,6 +7,7 @@ A CLI tool that uses Google Generative AI + LangChain to generate personalized c
 
 Features
 - Generate structured cover letters (JSON + rendered LaTeX)
+- Generate professional email body focused on AI/Data/ML
 - Paste or upload CV (PDF extraction via docling)
 - Save reusable CV and custom instructions
 - Preview and export as PDF (requires a local LaTeX installation)
@@ -46,7 +47,7 @@ Workflow overview
    - Paste plain text, upload a PDF (docling extraction), or reuse saved CV.
 2. Paste the job listing text.
 3. Optionally add a custom instruction (tone, focus, length).
-4. Generate the cover letter — the AI returns structured JSON which is shown in the preview.
+4. Generate the cover letter — the AI returns structured JSON which is shown in the preview (including a generated email body).
 5. Export: saves a LaTeX file under ./cover_letters and attempts to compile to PDF if pdflatex is present.
 
 Files & storage

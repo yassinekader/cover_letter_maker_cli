@@ -252,6 +252,17 @@ class CoverLetterCLI:
         console.print(top_row)
         console.print("\n")
         console.print(content_panel)
+        
+        # Email Panel
+        email_panel = Panel(
+            Text(data.email_content or "No email generated.", style="dim"),
+            title="[bold yellow]📧 Generated Email[/bold yellow]",
+            border_style="yellow",
+            padding=(1,2)
+        )
+        console.print("\n")
+        console.print(email_panel)
+        
         console.rule(style="cyan")
 
     def export_cover_letter(self):
@@ -267,6 +278,7 @@ class CoverLetterCLI:
         )
         
         console.print(f"[green]✅ Cover letter saved to {results.get('pdf')}")
+
     
     def show_saved_files(self):
         """Show saved CV and job listings"""

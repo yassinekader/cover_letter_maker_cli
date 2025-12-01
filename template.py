@@ -41,6 +41,7 @@ class CoverLetterData(BaseModel):
     contact: ContactInfo
     company: CompanyInfo
     content: CoverLetterContent
+    email_content: str = Field(description="A professional email body to accompany the application")
 
     def to_dict(self) -> dict:
         """Convert to dictionary for LaTeX template."""

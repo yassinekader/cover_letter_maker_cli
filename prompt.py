@@ -10,6 +10,7 @@ PROMPT = ChatPromptTemplate.from_template(
                         4. Writes in a professional yet personable tone
                         5. Highlights relevant achievements and skills
                         6. Shows genuine enthusiasm for the role
+                        7. Generates a professional email body to accompany the application. The email MUST focus on the candidate's expertise in Data, AI, Machine Learning, and Data Science, highlighting these skills as the primary value proposition.
                         
                         User Instructions:
                         {user_instructions}
@@ -55,7 +56,8 @@ PROMPT = ChatPromptTemplate.from_template(
                             "closing_paragraph": "Je suis particulièrement attiré par la démarche d'innovation continue de SFR et sa vision ambitieuse de la convergence entre réseaux fixes et mobiles.",
                             "closing_salutation": "Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
                             "signoff_paragraph": "Je vous remercie pour l'attention portée à ma candidature et reste à votre disposition pour un entretien."
-                        }}
+                        }},
+                        "email_content": "Subject: Application for Stagiaire Ingénieur IA - Yassine Kader\n\nDear Hiring Manager,\n\nI am writing to express my strong interest in the Stagiaire Ingénieur IA position at SMR, as advertised on your career site. With a background in Data Science and AI from ENSA El Jadida, I am eager to contribute to your team.\n\nPlease find attached my resume and cover letter for your review.\n\nBest regards,\nYassine Kader"
                         }}
                         """
                     )
